@@ -1,6 +1,7 @@
 package com.example.mobile
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         val label = findViewById<TextView>(R.id.main_label)
         val dayNumber = findViewById<EditText>(R.id.main_namber)
+        val showButton = findViewById<Button>(R.id.button)
 
 
 
