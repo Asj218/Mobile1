@@ -25,8 +25,19 @@ class MainActivity : AppCompatActivity() {
         val dayNumber = findViewById<EditText>(R.id.main_namber)
         val showButton = findViewById<Button>(R.id.button)
 
-
-
-
+        showButton.setOnClickListener {
+            val dayNumberValue = dayNumber.text.toString().toIntOrNull()
+            if (dayNumberValue != null && dayNumberValue in 1..7) {
+                val dayName = getDayName(dayNumberValue)
+                label.text = "День недели: $dayName"
+            } else {
+                label.text = "Неверный номер дня!"
+            }
+        }
     }
+
+
+
+
+
 }
