@@ -1,6 +1,7 @@
 package com.example.mobile
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,5 +18,10 @@ class MainActivity : AppCompatActivity() {
             insets
 
         }
+
+        val label = findViewById<TextView>(R.id.main_label)
+
+
+
     }
 }
